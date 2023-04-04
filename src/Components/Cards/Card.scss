@@ -1,6 +1,6 @@
 $border-settings: 1px solid hsl(0, 0%, 80%);
 
-.card {
+.Card {
   display: flex;
   flex-direction: column;
   width: 250px;
@@ -8,7 +8,7 @@ $border-settings: 1px solid hsl(0, 0%, 80%);
   background-color: hsla(200, 20%, 95%, 0.6);
   color: var(--apps_text_color);
   caret-color: transparent;
-  > .card_header {
+  > .Card__Header {
     text-align: center;
     min-height: 1em;
     padding: 0.5em 1em;
@@ -16,13 +16,13 @@ $border-settings: 1px solid hsl(0, 0%, 80%);
     border-top-right-radius: 5px;
     border: $border-settings;
   }
-  > .card_body {
+  > .Card__Body {
     min-height: 2.5em;
     padding: 0.5em 1em;
     border: $border-settings;
     border-top: unset;
   }
-  > .card_footer {
+  > .Card__Footer {
     min-height: 1em;
     padding: 0.5em 1em;
     border: $border-settings;

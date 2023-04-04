@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import React from "react";
-import style from "./Card.module.scss";
+import  "./Card.scss";
 import { CardProps } from "./type";
 
 /*  
@@ -17,13 +17,13 @@ const defaultProps: Required<CardProps> = Object.freeze({
 export function Card(props: CardProps) {
   const newProps = { ...defaultProps, ...props };
   const { body, className, header, footer } = newProps;
-  const rootClassName = classNames(style.card, className);
+  const rootClassName = classNames("Card",className);
 
   return (
     <div className={rootClassName}>
-      <div className={style.cardHeader}>{header}</div>
-      <div className={style.cardBody}>{body}</div>
-      <div className={style.cardFooter}>{footer}</div>
+      <div className="Card__Header">{header}</div>
+      <div className="Card__Body">{body}</div>
+      <div className="Card__Footer">{footer}</div>
     </div>
   );
 }

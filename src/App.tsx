@@ -1,23 +1,35 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import { useEffect, useState } from "react";
 import "./App.scss";
-import { Card } from "./Components";
+import DataFetchSuspense from "./DataSuspense/DataFetchSuspense";
 
 function App() {
   return (
     <div className="App">
-      <div className="CardContainer">
-        <Card
-          header={"Item 1"}
-          body={"This is the first item."}
-          footer={
-            <div>
-              <button type="button">Ok</button>
-            </div>
-          }
-        />
-      </div>
+      <DataFetchSuspense />
     </div>
+  );
+}
+
+function DataList() {
+  const [dataList, setDataList] = useState<string[]>([]);
+  useEffect(() => {
+    let current = true;
+    fetch("url")
+      .then((res) => res.json())
+      .then((data) => {
+        if (current)
+        setDataList(data)
+      });
+    return ()=>{
+      current = false;
+    }
+  }, []);
+  return (
+    <ul className="DataList">
+      {dataList.map((data, index) => (
+        <li key={index}>{data}</li>
+      ))}
+    </ul>
   );
 }
 
