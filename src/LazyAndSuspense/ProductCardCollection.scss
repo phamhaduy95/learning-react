@@ -1,14 +1,14 @@
 .Container {
-  display: flex;
-  > .Card {
-    margin-right: 1em;
-    > .Card__Body {
-      height: calc(var(--line-height) * 5 * 1em);
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
+    display: flex;
+    > .Card {
+        margin-right: 1em;
+        > .Card__Body {
+            height: calc(var(--line-height) * 5 * 1em);
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        > .Card__Footer {
+            display: none;
+        }
     }
-    > .Card__Footer {
-      display: none;
-    }
-  }
 }

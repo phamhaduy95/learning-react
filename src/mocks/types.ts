@@ -3,5 +3,4 @@ export type ProductSchema = {
     title: string;
     description: string;
     price: number;
-  };
-
+};
