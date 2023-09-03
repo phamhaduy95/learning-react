@@ -24,10 +24,10 @@
     "msw": "^1.1.0",
     "postcss": "^8.4.29",
     "postcss-import": "^15.1.0",
-    "postcss-nesting": "^12.0.1",
     "tailwindcss": "^3.3.3",
     "typescript": "^4.9.3",
-    "vite": "^4.1.0"
+    "vite": "^4.1.0",
+    "vite-tsconfig-paths": "^4.2.0"
   },
   "packageManager": "yarn@3.4.1",
   "msw": {
