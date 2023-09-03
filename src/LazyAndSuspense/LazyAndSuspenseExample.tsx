@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useState } from 'react';
+import { lazy, Suspense } from 'react';
 import { ErrorBoundary } from './ErrorBoundary';
 
 // how to refresh loading for several time if there is a connection issue.`

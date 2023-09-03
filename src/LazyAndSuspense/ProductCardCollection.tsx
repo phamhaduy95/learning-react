@@ -1,6 +1,5 @@
-import React from 'react';
-import { Card } from '../Components';
-import './ProductCardCollection.scss';
+import { Card } from '@components';
+import './ProductCardCollection.css';
 
 type ProductType = {
     id: string;
@@ -27,7 +26,7 @@ const products: ProductType[] = [
 ];
 
 function renderProductCards(products: ProductType[]) {
-    return products.map((product, index) => <Card header={product.name} body={product.description} key={product.id} />);
+    return products.map((product, index) => <Card Header={product.name} Body={product.description} key={product.id} />);
 }
 
 type Props = {

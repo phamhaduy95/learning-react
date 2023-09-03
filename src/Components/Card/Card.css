@@ -1,0 +1,13 @@
+.Card {
+    @apply flex flex-col w-[250px] border border-primary-text caret-transparent rounded-sm;
+
+    @at-root .Card__Header {
+        @apply text-center px-2 py-4;
+    }
+    @at-root .Card__Body {
+        @apply top-0 px-2 py-4 min-h-[2.5rem];
+    }
+    @at-root .Card__Footer {
+        @apply rounded-b-md px-2 py-4 min-h-[1.5rem];
+    }
+}

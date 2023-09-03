@@ -1,0 +1,10 @@
+.Container {
+    @apply flex;
+    > .Card {
+        @apply mr-4;
+
+        > .Card__Footer {
+            @apply hidden;
+        }
+    }
+}
