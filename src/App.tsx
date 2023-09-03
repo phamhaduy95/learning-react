@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { Card } from '@components';
 import './App.css';
 
 function App() {
