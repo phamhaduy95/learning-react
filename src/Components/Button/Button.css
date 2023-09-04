@@ -1,0 +1,3 @@
+.Button {
+    @apply border border-primary-border rounded-sm py-1 px-2 caret-transparent text-sm text-primary-text;
+}
