@@ -11,6 +11,7 @@
   "dependencies": {
     "@loadable/component": "^5.15.3",
     "classnames": "^2.3.2",
+    "primereact": "^9.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.45.4",
