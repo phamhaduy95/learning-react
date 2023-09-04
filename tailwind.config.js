@@ -7,15 +7,29 @@ export default {
                 sm: '480px',
                 md: '768px',
                 lg: '976px',
-                xl: '1440px',
+                xl: '1200px',
             },
             colors: {
                 primary: {
-                    text: '#8492a6',
-                    bg: '',
+                    text: '#212529',
+                    bg: '#0d6efd',
+                    border: '#6c757d',
                 },
                 secondary: {
-                    background: '#f0f3f599',
+                    bg: '#6c757d',
+                },
+                danger: {
+                    text: '#dc3545',
+                    bg: '#dc3545',
+                },
+                success: {
+                    bg: '#198754',
+                },
+                warning: {
+                    bg: '#ffc107',
+                },
+                light: {
+                    bg: '#f8f9fa',
                 },
             },
         },

@@ -1,0 +1,22 @@
+.NativeInput {
+    @apply flex flex-col w-[150px];
+
+    @at-root .NativeInput__Label {
+        @apply text-xs mb-1 font-thin text-primary-text ml-[0.1em];
+    }
+
+    @at-root .NativeInput__TextField {
+        @apply mb-1 rounded-sm border border-primary-border py-1 px-2 text-sm;
+        @apply focus:outline-none;
+    }
+
+    > .NativeInput__ErrorText {
+        @apply mb-1;
+    }
+
+    &.is-error {
+        > .NativeInput__TextField {
+            @apply mb-1;
+        }
+    }
+}
