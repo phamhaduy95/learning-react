@@ -1,5 +1,5 @@
+import ErrorBoundary from '@components/ErrorBoundary';
 import { lazy, Suspense } from 'react';
-import { ErrorBoundary } from './ErrorBoundary';
 
 // how to refresh loading for several time if there is a connection issue.`
 const Lazy = lazy(async () => {

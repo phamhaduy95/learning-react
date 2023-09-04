@@ -26,7 +26,9 @@ const products: ProductType[] = [
 ];
 
 function renderProductCards(products: ProductType[]) {
-    return products.map((product, index) => <Card Header={product.name} Body={product.description} key={product.id} />);
+    return products.map((product, index) => (
+        <Card Header={product.name} Body={product.description} key={product.id} />
+    ));
 }
 
 type Props = {
@@ -35,5 +37,5 @@ type Props = {
 
 export default function ProductCardCollection(props: Props) {
     console.log(crypto.randomUUID());
-    return <div className='Container'>{renderProductCards(products)}</div>;
+    return <div className="Container">{renderProductCards(products)}</div>;
 }

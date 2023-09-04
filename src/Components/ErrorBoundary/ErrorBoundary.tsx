@@ -1,6 +1,6 @@
 import React from 'react';
 
-type ErrorBoundaryProps = {
+export type ErrorBoundaryProps = {
     children: React.ReactNode;
     fallback?: React.ReactNode;
 };
@@ -14,7 +14,7 @@ const defaultProps: ErrorBoundaryProps = {
     fallback: <></>,
 };
 
-export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ComponentState> {
+class ErrorBoundary extends React.Component<ErrorBoundaryProps, ComponentState> {
     constructor(props: ErrorBoundaryProps) {
         super({ ...defaultProps, ...props });
         this.state = { hasError: false };
@@ -30,3 +30,5 @@ export class ErrorBoundary extends React.Component<ErrorBoundaryProps, Component
         return this.props.children;
     }
 }
+
+export default ErrorBoundary;
