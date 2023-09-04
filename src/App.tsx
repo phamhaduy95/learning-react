@@ -1,10 +1,10 @@
-import { Card } from '@components';
+import StudentForm from '@pages/FormWithPrebuiltComponent/StudentFrom';
 import './App.css';
 
 function App() {
     return (
-        <div className='App'>
-            <Card Header='welcome' />
+        <div className="App">
+            <StudentForm />
         </div>
     );
 }
