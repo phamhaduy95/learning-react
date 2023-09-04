@@ -1,22 +1,28 @@
 .NativeInput {
-    @apply flex flex-col w-[150px];
+    @apply flex flex-col w-[150px] relative;
 
     @at-root .NativeInput__Label {
         @apply text-xs mb-1 font-thin text-primary-text ml-[0.1em];
     }
 
     @at-root .NativeInput__TextField {
-        @apply mb-1 rounded-sm border border-primary-border py-1 px-2 text-sm;
-        @apply focus:outline-none;
+        @apply mb-5 rounded-sm border border-primary-border py-1 px-2 text-sm;
+        @apply focus:outline-none focus:shadow-sm focus:shadow-primary-bg/30 focus:border-primary-bg;
     }
 
     > .NativeInput__ErrorText {
-        @apply mb-1;
+        @apply absolute bottom-1;
+    }
+
+    &.is-valid {
+        > .NativeInput__TextField {
+            @apply border-success-bg shadow-inner;
+        }
     }
 
     &.is-error {
         > .NativeInput__TextField {
-            @apply mb-1;
+            @apply focus:border-danger-bg focus:shadow-danger-text/30;
         }
     }
 }
